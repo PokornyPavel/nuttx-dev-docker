@@ -15,7 +15,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update
 RUN apt-get install -y \
     bison flex gettext texinfo libncurses5-dev locales \
-    libncursesw5-dev gperf automake libtool pkg-config \
+    libncursesw5-dev xxd gperf automake libtool pkg-config \
     build-essential genromfs libgmp-dev libmpc-dev \
     libmpfr-dev libisl-dev binutils-dev libelf-dev git \
     libexpat-dev gcc-multilib g++-multilib picocom \
