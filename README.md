@@ -9,7 +9,9 @@
 
 see more information at official [docker installation](https://docs.docker.com/engine/install/) guide.
 
-### Build  and run docker image
+### Build and run docker image
+
+#### Linu and MacOS:
 
 To build docker image run:
 
@@ -18,6 +20,17 @@ To build docker image run:
 To run docker container run:
 
     source docker-setup.sh run
+
+#### Windows:
+
+To build docker image run:
+
+    .\docker-setup.bat build
+
+To run docker container run:
+
+    .\docker-setup.bat run
+
 
 ### Work in container
 Have fun with development...
