@@ -1,8 +1,8 @@
 [submodule "nuttxspace/nuttx"]
 	path = nuttxspace/nuttx
 	url = https://github.com/apache/incubator-nuttx.git
-	branch = releases/10.0
+	branch = releases/12.10
 [submodule "nuttxspace/apps"]
 	path = nuttxspace/apps
 	url = https://github.com/apache/incubator-nuttx-apps
-	branch = releases/10.1
+	branch = releases/12.10

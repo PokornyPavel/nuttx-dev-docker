@@ -1,14 +1,14 @@
-FROM ubuntu:focal
+FROM debian:bookworm
 
-ARG UNAME=roman
+ARG UNAME=pavel
 ARG UID=1000
 ARG GID=1000
 
 # non-interactive
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # set timezone
-ENV TZ=Europe/Berlin
+ENV TZ=Europe/Prague
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # install applications
@@ -20,7 +20,8 @@ RUN apt-get install -y \
     libmpfr-dev libisl-dev binutils-dev libelf-dev git \
     libexpat-dev gcc-multilib g++-multilib picocom \
     u-boot-tools util-linux kconfig-frontends sudo \
-    gcc-arm-none-eabi binutils-arm-none-eabi
+    gcc-arm-none-eabi binutils-arm-none-eabi\
+    python3-kconfiglib openocd vim
 
 # set the locale
 RUN locale-gen en_US.UTF-8

@@ -1,7 +1,7 @@
 @echo off
 
 set DOCKER_IMAGE=nuttx-buildt
-set DOCKER_USER=roman
+set DOCKER_USER=pavel
 
 if [%1]==[run] goto :run
 if [%1]==[build] goto :build
